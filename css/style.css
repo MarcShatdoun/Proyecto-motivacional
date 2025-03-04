@@ -23,12 +23,14 @@ main{
   
 
     p{
+        order: 1;
         font-size: 1.5rem;
         padding: 20px 20px;
         
         
     }
     img{
+        order: 2;
         height: 350px;
         max-width: 500px;
         border-radius: 1rem;
@@ -49,6 +51,7 @@ nav{
 nav a{
     text-decoration: none;
     font-size: 2rem;
+    color: rgb(0, 4, 79);
 }
 
 nav a:hover{
@@ -122,4 +125,16 @@ nav a:hover{
     margin-top: 40px;
     letter-spacing: 4px
   }
+  @media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    main p {
+        order: 2;
+    }
+    main img {
+        order: 1;
+    }
+}
         
